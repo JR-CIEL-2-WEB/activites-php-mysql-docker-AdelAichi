@@ -1,0 +1,91 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form container styling */
+.contact-clean {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Title styling */
+.contact-clean h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+/* Input and textarea styling */
+.contact-clean .form-control {
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Checkbox styling */
+.contact-clean .form-check-label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Button styling */
+.contact-clean .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-clean .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Small text for password validation */
+.contact-clean small.text-danger {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+
+/* Validation styling */
+.is-valid {
+  border-color: green;
+  background-color: #d4edda;
+}
+
+.is-invalid {
+  border-color: red;
+  background-color: #f8d7da;
+}
+
+/* Button color change */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
