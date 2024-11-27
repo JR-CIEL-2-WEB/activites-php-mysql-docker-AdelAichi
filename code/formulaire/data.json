@@ -56,5 +56,50 @@
         "message": "az",
         "of_age": "Non",
         "avatar": " https:\/\/robohash.org\/1305bae3baa22201664a27951ae2f53b"
+    },
+    {
+        "name": "TAOUFIK",
+        "pr\u00e9nom": "Bilal",
+        "email": "TA@BI",
+        "password": "$2y$10$7CHRx9.qbeM2QfzEPSQWhOSG.kEy.Dtq3xOo1BCgSqjzQun2YF8ou",
+        "message": "ASASAS",
+        "of_age": "Oui",
+        "avatar": " https:\/\/robohash.org\/f3e3f01c063c9296b3dc7973575bc66b"
+    },
+    {
+        "name": "amine",
+        "pr\u00e9nom": "amine",
+        "email": "momo@momo",
+        "password": "$2y$10$EDucNpf4TH4k68wfzuEKFe0yTkiw.JYPGLNwe9kdgpIyxpyKBcKbG",
+        "message": "as",
+        "of_age": "Oui",
+        "avatar": "https:\/\/robohash.org\/a2166c1c3964d93683ab535aa57ae2d2"
+    },
+    {
+        "name": "adza",
+        "pr\u00e9nom": "addaz",
+        "email": "adzada@svdsv",
+        "password": "$2y$10$drg.0UAYlcNh3DJtG5jzs.EMtGuOyniGfn44NQunEsshC4r8w..fK",
+        "message": "svdsv",
+        "of_age": "Oui",
+        "avatar": "https:\/\/robohash.org\/890649ec0750730627cd7d81419452cc"
+    },
+    {
+        "name": "adza",
+        "pr\u00e9nom": "addaz",
+        "email": "nni@niin",
+        "password": "$2y$10$5TjQWLfqjOO38LM2FU4viuw0ZQDugLH0K1335GDgC3FVfgBWPOGjC",
+        "message": "svdsv",
+        "of_age": "Oui",
+        "avatar": "https:\/\/robohash.org\/4adf8db217e1d99b0b1be0555c34b7f7"
+    },
+    {
+        "name": "Amine",
+        "pr\u00e9nom": "Ghenimi",
+        "email": "Amine@Ghenimi",
+        "password": "$2y$10$5FEQ2gjzbX7xP.FmCTIDJe.TpmUsLeY.xJCt0CbJPnObJeukSh4\/y",
+        "message": "az",
+        "of_age": "Oui",
+        "avatar": " https:\/\/robohash.org\/cda6b32076da4ed82efbf8727e2c548b"
     }
 ]
