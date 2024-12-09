@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Nombres - Médiane</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f6;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #numberList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #numberList li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #jsonResult, #medianeResult {
+            margin-top: 20px;
+            font-size: 14px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .input-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gestionnaire de Nombres - Calcul de Médiane</h1>
+    
+    <div class="input-container">
+        <input type="number" id="inputValue" placeholder="Entrez un nombre" />
+        <button id="addNumber">Ajouter</button>
+        <div class="error" id="errorMessage"></div>
+    </div>
+    
+    <h2>Liste des Nombres :</h2>
+    <ul id="numberList"></ul>
+
+    <button id="resetButton">Réinitialiser la Liste</button>
+
+    <h2>Résultats :</h2>
+    <div id="jsonResult"></div>
+    <div id="medianeResult"></div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
