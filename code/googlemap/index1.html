@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carte des Courses - Google Maps</title>
+  <style>
+    #mapContainer {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Carte des Courses à Marseille</h1>
+  <label for="raceSelector">Choisissez une course :</label>
+  <select id="raceSelector">
+    <option value="vieuxPort">Course - Vieux-Port</option>
+    <option value="parcBorely">Course - Parc Borély</option>
+    <option value="canebiere">Course - La Canebière</option>
+  </select>
+
+  <div id="mapContainer"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7Y32T_PJHZxYcK3BJYJFNwSl6cuvLXpo&callback=initializeMap" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    let map, routePolyline;
+  
+    // Fonction d'initialisation de la carte
+    function initializeMap() {
+      const marseilleCenter = { lat: 43.296482, lng: 5.36978 };
+  
+      // Crée la carte centrée sur Marseille
+      map = new google.maps.Map(document.getElementById('mapContainer'), {
+        zoom: 15,
+        center: marseilleCenter
+      });
+  
+      // Charger la course par défaut (Vieux-Port)
+      loadRaceRoute('vieuxPort');
+  
+      // Ajouter un écouteur d'événement pour changer la course sélectionnée
+      document.getElementById('raceSelector').addEventListener('change', (event) => {
+        loadRaceRoute(event.target.value);
+      });
+    }
+  
+    // Fonction pour charger le parcours d'une course
+    function loadRaceRoute(raceId) {
+      // Effectuer une requête AJAX vers le fichier PHP pour obtenir les données de la course
+      fetch(`course.php?id=${raceId}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            console.error(data.error);
+            return;
+          }
+  
+          // Extraire les coordonnées des marqueurs
+          const racePath = data.markers.map(marker => ({ lat: marker.lat, lng: marker.lng }));
+  
+          // Centrer la carte sur le premier marqueur de la course
+          map.setCenter(racePath[0]);
+  
+          // Supprimer la polyline précédente
+          if (routePolyline) {
+            routePolyline.setMap(null);
+          }
+  
+          // Créer et afficher la nouvelle polyline pour la course sélectionnée
+          routePolyline = new google.maps.Polyline({
+            path: racePath,
+            geodesic: true,
+            strokeColor: "#FF0000",
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+          });
+          routePolyline.setMap(map);
+  
+          // Ajouter un marqueur pour chaque point du parcours
+          racePath.forEach(coord => {
+            new google.maps.Marker({
+              position: coord,
+              map: map
+            });
+          });
+  
+          // Afficher les données dans la console
+          console.log(data);
+        })
+        .catch(error => console.error("Erreur lors du chargement de la course :", error));
+    }
+  </script>
+  

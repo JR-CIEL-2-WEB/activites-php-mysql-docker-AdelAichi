@@ -1,0 +1,38 @@
+[
+    {
+      "id": "vieuxPort",
+      "name": "Course - Vieux-Port",
+      "markers": [
+        { "lat": 43.296482, "lng": 5.36978, "name": "Point 1" },
+        { "lat": 43.297892, "lng": 5.373058, "name": "Point 2" },
+        { "lat": 43.299402, "lng": 5.377516, "name": "Point 3" },
+        { "lat": 43.300815, "lng": 5.375942, "name": "Point 4" },
+        { "lat": 43.299053, "lng": 5.372638, "name": "Point 5" },
+        { "lat": 43.296598, "lng": 5.368997, "name": "Point 6" }
+      ]
+    },
+    {
+      "id": "parcBorely",
+      "name": "Course - Parc Borély",
+      "markers": [
+        { "lat": 43.261542, "lng": 5.381721, "name": "Point 1" },
+        { "lat": 43.262500, "lng": 5.384642, "name": "Point 2" },
+        { "lat": 43.263892, "lng": 5.386398, "name": "Point 3" },
+        { "lat": 43.261111, "lng": 5.379444, "name": "Point 4" },
+        { "lat": 43.259722, "lng": 5.380833, "name": "Point 5" },
+        { "lat": 43.258000, "lng": 5.382500, "name": "Point 6" }
+      ]
+    },
+    {
+      "id": "canebiere",
+      "name": "Course - La Canebière",
+      "markers": [
+        { "lat": 43.296349, "lng": 5.369200, "name": "Point 1" },
+        { "lat": 43.297100, "lng": 5.371111, "name": "Point 2" },
+        { "lat": 43.298300, "lng": 5.373600, "name": "Point 3" },
+        { "lat": 43.299400, "lng": 5.375900, "name": "Point 4" },
+        { "lat": 43.300500, "lng": 5.377400, "name": "Point 5" },
+        { "lat": 43.301600, "lng": 5.379200, "name": "Point 6" }
+      ]
+    }
+  ]
