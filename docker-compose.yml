@@ -19,8 +19,8 @@ services:
       # 🚨 Changer si vous utilisez cette configuration en production
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: appdb
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_USER: eleve
+      MYSQL_PASSWORD: eleve
     volumes:
       - dbdata:/var/lib/mysql 
     ports:
